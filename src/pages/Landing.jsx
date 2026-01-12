@@ -113,8 +113,8 @@ export default function Landing({ unlockAudio, playPow, playSwoosh }) {
           Universes
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-14 max-w-6xl mx-auto">
-          {["Hollywood", "Bollywood", "Tollywood","K-Drama","Harry Potter"].map((u, i) => (
+        <div className="grid md:grid-cols-3 gap-28 max-w-6xl mx-auto">
+          {["Hollywood", "Bollywood", "Tollywood","K-Drama","Harry Potter","Pollywood"].map((u, i) => (
             <div
               key={i}
               onMouseEnter={playSwoosh}
