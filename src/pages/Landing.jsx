@@ -39,17 +39,28 @@ export default function Landing({ unlockAudio, playPow, playSwoosh }) {
         <div className="absolute right-0 top-0 h-full w-14 bg-[repeating-linear-gradient(to_bottom,rgba(0,0,0,0.3)_0px,rgba(0,0,0,0.3)_10px,transparent_10px,transparent_20px)] opacity-40" />
 
         {/* HERO CONTENT */}
-        <div className="relative z-10 text-center max-w-4xl">
-          <h1 className="text-7xl md:text-8xl font-black uppercase rotate-[-2deg] mb-8">
-            <span className="bg-white px-8 py-4 border-4 border-black shadow-[10px_10px_0px_#000]">
-              CINVERSE
-            </span>
-          </h1>
+        <div className="relative z-10 text-center max-w-5xl mx-auto">
 
-          <p className="text-xl md:text-2xl font-bold mb-12">
-            BOOM 💥 A comic-style universe where movies & series are
-            <span className="underline"> explored, not just watched</span>.
-          </p>
+  {/* ================= TITLE BOARD ================= */}
+  <div className="inline-block rotate-[-2deg] mb-8">
+    <div className="relative bg-white border-[5px] border-black px-16 py-6">
+
+      {/* HARD COMIC SHADOW */}
+      <div className="absolute inset-0 translate-x-[10px] translate-y-[10px] bg-black -z-10" />
+
+      <h1 className="text-7xl md:text-8xl font-black uppercase tracking-wide">
+        CINVERSE
+      </h1>
+    </div>
+  </div>
+
+  {/* ================= SUBTITLE ================= */}
+  <p className="text-xl md:text-2xl font-bold mb-14 max-w-3xl mx-auto leading-relaxed">
+    BOOM 💥 A comic-style universe where movies & series are explored,
+    <span className="underline underline-offset-4">
+      {" "}not just watched
+    </span>.
+  </p>
 
           <button
             onClick={() => {
@@ -70,7 +81,7 @@ export default function Landing({ unlockAudio, playPow, playSwoosh }) {
       {/* =====================================================
           PAGE 2 — WHAT IS CINVERSE
       ====================================================== */}
-      <section className="min-h-screen bg-white border-t-8 border-black px-10 py-32">
+      <section className="min-h-screen bg-yellow border-t-8 border-black px-10 py-32">
         <h2 className="text-6xl font-black uppercase text-center mb-20">
           What is Cinverse?
         </h2>
@@ -103,7 +114,7 @@ export default function Landing({ unlockAudio, playPow, playSwoosh }) {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-14 max-w-6xl mx-auto">
-          {["Hollywood", "Bollywood", "Tollywood"].map((u, i) => (
+          {["Hollywood", "Bollywood", "Tollywood","K-Drama","Harry Potter"].map((u, i) => (
             <div
               key={i}
               onMouseEnter={playSwoosh}
@@ -122,7 +133,7 @@ export default function Landing({ unlockAudio, playPow, playSwoosh }) {
       {/* =====================================================
           PAGE 4 — CHARACTERS & TIMELINES
       ====================================================== */}
-      <section className="min-h-screen bg-white border-t-8 border-black px-10 py-32">
+      <section className="min-h-screen bg-yellow border-t-8 border-black px-10 py-32">
         <h2 className="text-6xl font-black uppercase text-center mb-20">
           Characters & Timelines
         </h2>
