@@ -8,17 +8,19 @@ export default function Hollywood() {
       description="Global cinema with legendary franchises and iconic storytelling."
     >
       {/* ================= HERO BANNER ================= */}
-      <div className="relative mb-20 rounded-xl overflow-hidden border-4 border-black">
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/20" />
-        <img
-          src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4"
-          alt="Hollywood"
-          className="w-full h-[260px] object-cover"
-        />
-        <h1 className="absolute bottom-8 left-8 text-5xl font-black text-white uppercase">
-          Hollywood
-        </h1>
-      </div>
+<div className="relative mb-20 rounded-xl overflow-hidden border-4 border-black">
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/10 to-black/20" />
+
+  <img
+    src="/images/hollywood.jpg"
+    alt="Hollywood"
+    className="w-full h-[260px] object-cover"
+  />
+
+  <h1 className="absolute bottom-8 left-8 text-5xl font-black text-white uppercase">
+    Hollywood
+  </h1>
+</div>
 
       {/* ================= FRANCHISES ================= */}
       <Section title="Popular Franchises">
